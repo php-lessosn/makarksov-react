@@ -54,7 +54,14 @@ export const Portfolio = () => {
                   alt={""}
                   src={image}
                   className="card-img-top"
-                  style={{ margin: "auto", display: "block" }}
+                  style={{
+                    margin: "auto",
+                    display: "block",
+                    cursor: "pointer"
+                  }}
+                  onClick={() =>
+                    window.open(`/image?img=${encodeURIComponent(image)}`)
+                  }
                 />
               </div>
             </div>
